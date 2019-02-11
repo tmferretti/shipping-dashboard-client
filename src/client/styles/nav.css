@@ -3,8 +3,8 @@
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #9b4dca;
-  border: 1px solid #9b4dca;
+  background-color: #71eeb8;
+  border: 1px solid #71eeb8;
   border-radius: 5px;
 }
 
@@ -24,7 +24,8 @@
 }
 
 .active a {
-  color: #9b4dca;
+  color: #32e699;
+  font-weight: bold;
 }
 
 .base a:hover {
