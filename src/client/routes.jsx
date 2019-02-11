@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import Home from "./components/home";
 import ShipmentForm from "./components/shipment-form";
 import Demo2 from "./components/demo2";
+import VendorList from "./components/vendors"
 import { withRouter } from "react-router-dom";
 import { renderRoutes } from "react-router-config";
 
@@ -35,6 +36,11 @@ const routes = [
         path: "/shipment-form",
         exact: true,
         component: ShipmentForm
+      },
+      {
+        path: "/vendors",
+        exact: true,
+        component: Demo2
       },
       {
         path: "/demo2",
