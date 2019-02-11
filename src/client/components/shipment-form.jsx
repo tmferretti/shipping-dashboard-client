@@ -4,9 +4,9 @@ import { connect } from "react-redux";
 import { Nav } from "./nav";
 import { inputName, inputTextarea, selectOption } from "../actions";
 import custom from "../styles/custom.css"; // eslint-disable-line no-unused-vars
-import demoStyle from "../styles/demo1.css"; // eslint-disable-line no-unused-vars
+import shipmentFormStyle from "../styles/shipment-form.css"; // eslint-disable-line no-unused-vars
 
-class Demo1 extends Component {
+class ShipmentForm extends Component {
   constructor(props) {
     super(props);
 
@@ -22,8 +22,8 @@ class Demo1 extends Component {
     return (
       <div styleName={"custom.container"}>
         <Nav {...this.props} />
-        <div styleName={"demoStyle.container"}>
-          <h2>Forms Demo</h2>
+        <div styleName={"shipmentFormStyle.container"}>
+          <h2>Add A Shipment</h2>
           <form>
             <fieldset>
               <label htmlFor="nameField">Name</label>
@@ -65,7 +65,7 @@ class Demo1 extends Component {
   }
 }
 
-Demo1.propTypes = {
+ShipmentForm.propTypes = {
   username: PropTypes.string,
   textarea: PropTypes.string,
   selectedOption: PropTypes.string,
@@ -83,4 +83,4 @@ const mapStateToProps = state => {
 export default connect(
   mapStateToProps,
   dispatch => ({ dispatch })
-)(Demo1);
+)(ShipmentForm);
