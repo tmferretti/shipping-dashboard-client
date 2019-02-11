@@ -1,5 +1,5 @@
 .container {
-  background: linear-gradient(to bottom left, rgba(255, 99, 71, 0.7), rgba(0, 0, 255, 0.6));
+  background: linear-gradient(to bottom left, rgba(201, 255, 229, 1.0), rgba(24, 200, 125, 1.0));
   background-attachment: fixed;
   background-repeat: no-repeat;
   border-radius: 5px;
@@ -22,4 +22,8 @@
 .container textarea::placeholder,
 .container select {
   color: white;
+}
+
+.container input[type=button], input[type=submit], input[type=reset] {
+  
 }

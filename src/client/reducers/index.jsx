@@ -24,16 +24,6 @@ const number = (store, action) => {
   return store || { value: 0 };
 };
 
-const username = (store, action) => {
-  if (action.type === "INPUT_NAME") {
-    return {
-      value: action.value
-    };
-  }
-
-  return store || { value: "" };
-};
-
 const textarea = (store, action) => {
   if (action.type === "INPUT_TEXT_AREA") {
     return {
@@ -44,8 +34,18 @@ const textarea = (store, action) => {
   return store || { value: "" };
 };
 
-const selectedOption = (store, action) => {
-  if (action.type === "SELECT_OPTION") {
+const vendorId = (store, action) => {
+  if (action.type === "INPUT_VENDOR_ID") {
+    return {
+      value: action.value
+    };
+  }
+
+  return store || { value: "" };
+};
+
+const selectedShippingAddress = (store, action) => {
+  if (action.type === "SELECT_SHIPPING_ADDRESS") {
     return {
       value: action.value
     };
@@ -53,10 +53,30 @@ const selectedOption = (store, action) => {
   return store || { value: "0-13" };
 };
 
+const orderNum = (store, action) => {
+  if (action.type === "INPUT_ORDER_NUM") {
+    return {
+      value: action.value
+    };
+  }
+  return store || { value: "" };
+};
+
+const trackingNum = (store, action) => {
+  if (action.type === "INPUT_TRACKING_NUM") {
+    return {
+      value: action.value
+    };
+  }
+  return store || { value: "" };
+};
+
 export default combineReducers({
   checkBox,
   number,
-  username,
   textarea,
-  selectedOption
+  vendorId,
+  orderNum,
+  trackingNum,
+  selectedShippingAddress
 });

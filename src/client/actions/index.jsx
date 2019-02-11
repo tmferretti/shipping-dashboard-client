@@ -16,23 +16,30 @@ export const decNumber = () => {
   };
 };
 
-export const inputName = value => {
+export const inputVendorId = value => {
   return {
-    type: "INPUT_NAME",
+    type: "INPUT_VENDOR_ID",
     value
   };
 };
 
-export const inputTextarea = value => {
+export const inputTrackingNum = value => {
   return {
-    type: "INPUT_TEXT_AREA",
+    type: "INPUT_TRACKING_NUM",
     value
   };
 };
 
-export const selectOption = value => {
+export const inputOrderNum = value => {
   return {
-    type: "SELECT_OPTION",
+    type: "INPUT_ORDER_NUM",
+    value
+  };
+};
+
+export const selectShippingAddress = value => {
+  return {
+    type: "SELECT_SHIPPING_ADDRESS",
     value
   };
 };
